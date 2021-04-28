@@ -37,18 +37,25 @@
             <p>Мы эксперты в модных мужских стрижках.</p>
             <p>Работаем быстро, осторожно и со вкусом.</p>
           </div>
-          <ul class="list socials-list line">
-            <li class="socials-item">
-              <a class="link socials-link" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
-                Instagram
-              </a>
-            </li>
-            <li class="socials-item">
-              <a class="link socials-link" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
-                Youtube
-              </a>
-            </li>
-          </ul>
+          <div class="hero-sidebar">
+            <ul class="list socials-list line">
+              <li class="socials-item">
+                <a
+                  class="link socials-link"
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Instagram
+                </a>
+              </li>
+              <li class="socials-item">
+                <a class="link socials-link" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                  Youtube
+                </a>
+              </li>
+            </ul>
+          </div>
         </section>
       </div>
     </header>
@@ -73,7 +80,7 @@
               <span class="white-space">уже никогда не сможешь быть прежним</span>. Мы команда, которая всегда с
               клиентами "на одной волне". Поэтому, мы всегда готовы усовершенствовать каждого, кто к нам приходит!
             </p>
-            <button class="btn" type="button">онлайн-запись</button>
+            <button class="btn" type="button" data-modal-open>онлайн-запись</button>
           </div>
         </div>
       </section>
@@ -102,21 +109,21 @@
       </section>
       <section class="section benefits">
         <div class="container flexbox">
-          <ul class="list content-box">
-            <li>
-              <span>600<sup>+</sup></span>
+          <ul class="list content-box benefits-list">
+            <li class="benefits-item">
+              <span class="benefits-number">600</span>
               <p>Довольных клиентов в день</p>
             </li>
-            <li>
-              <span>50<sup>+</sup></span>
+            <li class="benefits-item">
+              <span class="benefits-number">50</span>
               <p>Наград за отличный сервис</p>
             </li>
-            <li>
-              <span>20<sup>+</sup></span>
+            <li class="benefits-item">
+              <span class="benefits-number">20</span>
               <p>Лучших мастеров Киева</p>
             </li>
-            <li>
-              <span>100<sup>+</sup></span>
+            <li class="benefits-item">
+              <span class="benefits-number">100</span>
               <p>Подарков постоянным клиентам</p>
             </li>
           </ul>
@@ -318,5 +325,17 @@
         </ul>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-btn-close" data-modal-close>X</button>
+        <p class="modal-title">Title</p>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae ipsum inventore voluptatibus ducimus
+          accusantium porro dolorem odio consequatur autem nobis earum voluptatem error ratione suscipit vero numquam,
+          quos culpa. Itaque.
+        </p>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

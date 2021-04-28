@@ -19,6 +19,7 @@
 
   --main-font: "Open Sans", sans-serif;
   --title-font: "Raleway", sans-serif;
+  --animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 html {
@@ -50,6 +51,10 @@ p {
   margin-bottom: 20px;
 }
 
+p:last-child {
+  margin-bottom: 0;
+}
+
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -72,6 +77,7 @@ p {
 .link {
   color: inherit;
   text-decoration: none;
+  transition: color var(--animation);
 }
 
 .link:hover,
@@ -132,6 +138,14 @@ p {
   margin-left: 40px;
 }
 
+.socials-link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: var(--title-cl);
+}
+
 .social-icons {
   display: inline-flex;
 }
@@ -179,6 +193,7 @@ p {
   text-transform: uppercase;
   color: var(--title-cl);
   background-color: transparent;
+  transition: background-color var(--animation), color var(--animation);
 }
 
 .btn:hover,
@@ -257,6 +272,8 @@ p {
   font-weight: 600;
   font-size: 12px;
   color: #fff;
+  position: relative;
+  z-index: 100;
 }
 
 .top-panel .btn {
@@ -270,7 +287,11 @@ p {
   margin-right: auto;
 }
 
+.hero-header {
+}
+
 .hero-header .container {
+  position: relative;
   background-image: url(../images/hero/img1.jpg);
   background-repeat: no-repeat;
   background-position: top right;
@@ -278,11 +299,27 @@ p {
 
 .hero-content {
   width: calc(100% / 12 * 5);
-  padding-top: 184px;
+  padding-top: 150px;
   padding-bottom: 206px;
-  padding-left: 100px;
+  margin-left: 200px;
 }
 
+.hero-sidebar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 115px;
+  height: 100%;
+  padding-bottom: 40px;
+  background-color: #fff;
+}
+
+.hero-sidebar .socials-list {
+  transform: rotate(-90deg) translateX(50%);
+}
 .price {
   background-image: url(../images/price/bg.png);
   background-repeat: no-repeat;
@@ -325,6 +362,43 @@ p {
 
 .price-item:not(:last-child) {
   margin-bottom: 20px;
+}
+
+.benefits-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.benefits-item {
+  width: 170px;
+  padding: 20px 24px;
+  margin-top: 30px;
+  margin-left: 30px;
+  background: var(--second-bg);
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-align: center;
+  color: var(--title-cl);
+}
+
+.benefits-item:nth-child(odd) {
+  transform: translateY(-30px);
+}
+
+.benefits-number {
+  font-weight: 700;
+  font-size: 42px;
+  letter-spacing: 0.05em;
+}
+
+.benefits-number::after {
+  content: "+";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 42px;
+  vertical-align: top;
+  color: var(--accent-cl);
 }
 
 .team {
@@ -371,6 +445,46 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(23, 26, 36, 0.6);
+  overflow: auto;
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 450px;
+  min-height: 400px;
+  padding: 40px 30px;
+  background-color: #fff;
+}
+
+.modal-title {
+  font-weight: 700;
+  font-size: 35px;
+  color: var(--title-cl);
+}
+
+.modal-btn-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
 }
 
 .dark-bg {
