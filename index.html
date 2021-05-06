@@ -263,6 +263,36 @@
         <div class="container flexbox">
           <section class="section content-box" id="contact-form">
             <h2 class="title section-title">Онлайн-запись</h2>
+            <form class="contact-form">
+              <input
+                type="text"
+                name="user-name"
+                class="contact-form-field"
+                pattern="^[a-zA-ZА-Яа-яЁё\s]+$"
+                placeholder="Имя*"
+                required
+                autofocus
+              />
+              <input
+                type="tel"
+                name="user-phone"
+                class="contact-form-field"
+                pattern="[0-9]{10}"
+                placeholder="Телефон*"
+                required
+              />
+              <textarea
+                class="contact-form-field contact-form-message"
+                name="user-message"
+                placeholder="сообщение"
+              ></textarea>
+              <input type="checkbox" name="user-checkbox" class="checkbox visually-hidden" id="checkbox" />
+              <label class="checkbox-label" for="checkbox">
+                Соглашаюсь с рассылкой и принимаю <a href="#" class="checkbox-link">Условия договора</a></label
+              >
+
+              <button type="submit" class="btn">отправить</button>
+            </form>
           </section>
           <section class="section contacts content-box" id="contacts">
             <h2 class="title section-title">Контакты</h2>
