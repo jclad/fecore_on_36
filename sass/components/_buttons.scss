@@ -1,0 +1,25 @@
+.btn {
+  min-width: 160px;
+  min-height: 40px;
+  padding: 12px 20px;
+  border: 1px solid var(--accent-cl);
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--title-cl);
+  background-color: transparent;
+  transition: background-color var(--animation), color var(--animation);
+
+  &:hover,
+  &:focus {
+    color: var(--alt-title-cl);
+    background-color: var(--accent-cl);
+  }
+}
+
+.btn--light {
+  @extend %light-cl;
+}

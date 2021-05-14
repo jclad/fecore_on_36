@@ -1,0 +1,15 @@
+.top-panel {
+  display: flex;
+  align-items: center;
+  padding-top: 32px;
+  font-weight: 600;
+  font-size: 12px;
+  color: #fff;
+  position: relative;
+  z-index: 100;
+}
+
+.top-panel__btn {
+  margin-left: 40px;
+  color: #fff;
+}

@@ -1,0 +1,7 @@
+.menu {
+  display: inline-flex;
+}
+
+.menu__item:not(:last-child) {
+  margin-right: 40px;
+}

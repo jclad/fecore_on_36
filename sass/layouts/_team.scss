@@ -1,0 +1,20 @@
+.team {
+  background-color: var(--second-bg);
+}
+
+.team__item {
+  flex-basis: calc((100% - 3 * 30px) / 3);
+  text-align: center;
+}
+
+.team__item-name {
+  font-weight: 400;
+  line-height: 1.39;
+  color: var(--title-cl);
+}
+
+.team__item-position {
+  font-size: 14px;
+  line-height: 1.36;
+  color: var(--accent-cl);
+}

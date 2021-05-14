@@ -1,0 +1,31 @@
+.title {
+  font-family: var(--title-font);
+  letter-spacing: 0.05em;
+  color: #303030;
+}
+
+.title--light {
+  @extend %light-cl;
+}
+
+.page-title {
+  margin-bottom: 20px;
+  font-size: 72px;
+  line-height: 1.18;
+}
+
+.title-label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--title-cl);
+}
+
+.title-label--light {
+  color: var(--alt-text-cl);
+}
