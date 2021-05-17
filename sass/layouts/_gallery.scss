@@ -1,4 +1,12 @@
 .gallery__item {
-  flex-basis: calc((100% - 4 * 30px) / 4);
+  flex-basis: 100%;
   text-align: center;
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 2 * 30px) / 2);
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 4 * 30px) / 4);
+  }
 }

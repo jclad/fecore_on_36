@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-    <header class="hero-header block block--dark-bg">
+    <!-- <header class="hero-header block block--dark-bg">
       <div class="container">
         <section class="top-panel">
           <nav class="nav hero-header__nav">
@@ -63,9 +63,9 @@
           </div>
         </section>
       </div>
-    </header>
+    </header> -->
     <main>
-      <section class="section about" id="about">
+      <!-- <section class="section about" id="about">
         <div class="container flexbox">
           <ul class="list flexbox content-box">
             <li class="content-box">
@@ -88,8 +88,8 @@
             <button class="btn" type="button" data-modal-open>онлайн-запись</button>
           </div>
         </div>
-      </section>
-      <section class="section price block block--dark-bg" id="price">
+      </section> -->
+      <!-- <section class="section price block block--dark-bg" id="price">
         <div class="container">
           <p class="title-label title-label--light line">Проведи время в компании лучших мастеров</p>
           <h2 class="title section__title title--light">Услуги и цены</h2>
@@ -115,31 +115,33 @@
           </div>
           <a class="link btn btn--light price__btn" href="#contact-form">онлайн-запись</a>
         </div>
-      </section>
+      </section> -->
       <section class="section benefits">
         <div class="container flexbox">
-          <ul class="list content-box benefits__list">
-            <li class="benefits__item">
-              <span class="benefits__number">600</span>
-              <p>Довольных клиентов в день</p>
-            </li>
-            <li class="benefits__item">
-              <span class="benefits__number">50</span>
-              <p>Наград за отличный сервис</p>
-            </li>
-            <li class="benefits__item">
-              <span class="benefits__number">20</span>
-              <p>Лучших мастеров Киева</p>
-            </li>
-            <li class="benefits__item">
-              <span class="benefits__number">100</span>
-              <p>Подарков постоянным клиентам</p>
-            </li>
-          </ul>
           <div class="content-box">
             <p class="title-label line">старая традиционная школа</p>
             <h2 class="title section__title">Почему приходят именно к нам?</h2>
             <p>О нас говорят только хорошее. Но лучше 1 раз увидеть и прочувствовать, чем 10 раз прочитать.</p>
+          </div>
+          <div class="content-box">
+            <ul class="list benefits__list">
+              <li class="benefits__item">
+                <span class="benefits__number">600</span>
+                <p>Довольных клиентов в день</p>
+              </li>
+              <li class="benefits__item">
+                <span class="benefits__number">50</span>
+                <p>Наград за отличный сервис</p>
+              </li>
+              <li class="benefits__item">
+                <span class="benefits__number">20</span>
+                <p>Лучших мастеров Киева</p>
+              </li>
+              <li class="benefits__item">
+                <span class="benefits__number">100</span>
+                <p>Подарков постоянным клиентам</p>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
@@ -319,51 +321,52 @@
           </section>
           <section class="section contacts content-box" id="contacts">
             <h2 class="title section__title title--light">Контакты</h2>
-
-            <address class="address">
-              <ul class="list address__list">
-                <li class="address__item">
-                  <a
-                    class="link address__link"
-                    href="https://goo.gl/maps/eCWbHf3CezRjAHAw8"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <svg class="address__icon">
-                      <use href="./images/icons/sprite.svg#icon-map-pin"></use>
-                    </svg>
-                    ул. Васильковая, 7А Киев, 08132
-                  </a>
-                </li>
-                <li class="address__item">
-                  <a class="link address__link" href="tel:+380441111111">
-                    <svg class="address__icon">
-                      <use href="./images/icons/sprite.svg#icon-phone"></use>
-                    </svg>
-                    +38 044 111 11 11
-                  </a>
-                </li>
-                <li class="address__item">
-                  <a class="link address__link" href="mailto:barbershop@email.com">
-                    <svg class="address__icon">
-                      <use href="./images/icons/sprite.svg#icon-mail"></use>
-                    </svg>
-                    barbershop@email.com
-                  </a>
-                </li>
-              </ul>
-            </address>
-            <section>
-              <p class="title-label  title-label--light line line">время работы</p>
-              <p>Ежедневно с 9:00 до 22:00</p>
-            </section>
+            <div class="contacts-wrap">
+              <address class="address">
+                <ul class="list address__list">
+                  <li class="address__item">
+                    <a
+                      class="link address__link"
+                      href="https://goo.gl/maps/eCWbHf3CezRjAHAw8"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <svg class="address__icon">
+                        <use href="./images/icons/sprite.svg#icon-map-pin"></use>
+                      </svg>
+                      ул. Васильковая, 7А Киев, 08132
+                    </a>
+                  </li>
+                  <li class="address__item">
+                    <a class="link address__link" href="tel:+380441111111">
+                      <svg class="address__icon">
+                        <use href="./images/icons/sprite.svg#icon-phone"></use>
+                      </svg>
+                      +38 044 111 11 11
+                    </a>
+                  </li>
+                  <li class="address__item">
+                    <a class="link address__link" href="mailto:barbershop@email.com">
+                      <svg class="address__icon">
+                        <use href="./images/icons/sprite.svg#icon-mail"></use>
+                      </svg>
+                      barbershop@email.com
+                    </a>
+                  </li>
+                </ul>
+              </address>
+              <section class="work-time">
+                <p class="title-label  title-label--light line line">время работы</p>
+                <p>Ежедневно с 9:00 до 22:00</p>
+              </section>
+            </div>
           </section>
         </div>
       </div>
     </main>
     <footer class="footer">
       <div class="container footer__container">
-        <p class="copuright">&copy; Copyright 2020</p>
+        <p class="copyright">&copy; Copyright 2020</p>
         <ul class="list socials line">
           <li class="socials__item">
             <a class="link socials__link" href="https://www.instagram.com/" target="_slank" rel="noopener noreferrer"
@@ -378,7 +381,7 @@
         </ul>
       </div>
     </footer>
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal__btn-close" data-modal-close>X</button>
         <p class="modal__title">Title</p>
@@ -388,7 +391,7 @@
           quos culpa. Itaque.
         </p>
       </div>
-    </div>
+    </div> -->
     <script src="./js/modal.js"></script>
   </body>
 </html>

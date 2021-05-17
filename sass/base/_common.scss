@@ -6,6 +6,7 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+  // outline: 1px solid red;
 }
 
 body {
@@ -14,6 +15,12 @@ body {
   line-height: 1.67;
   letter-spacing: 0.02em;
   color: var(--main-text-cl);
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 h1,
@@ -69,10 +76,14 @@ p:last-child {
 }
 
 .flexbox {
-  display: flex;
-  justify-content: space-between;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .content-box {
-  flex-basis: calc((100% - 30px) / 2);
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 30px) / 2);
+  }
 }

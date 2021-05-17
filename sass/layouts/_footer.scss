@@ -5,6 +5,20 @@
 
 .footer__container {
   display: flex;
+  flex-wrap: wrap-reverse;
   justify-content: space-between;
   align-items: center;
+}
+
+.copyright {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 0.2em;
+  color: var(--alt-text-cl);
+  margin-bottom: 0;
+
+  @media screen and (max-width: 767.98px) {
+    margin-top: 20px;
+  }
 }

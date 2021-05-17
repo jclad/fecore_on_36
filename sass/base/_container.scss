@@ -1,7 +1,27 @@
 .container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
+  padding-left: 31px;
+  padding-right: 31px;
+  // background-color: aqua;
+
+  @media screen and (min-width: 480px) {
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    // background-color: coral;
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+    padding-left: 39px;
+    padding-right: 39px;
+    // background-color: lightgreen;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    // background-color: yellow;
+  }
 }

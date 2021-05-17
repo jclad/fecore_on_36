@@ -1,6 +1,10 @@
 .address {
   font-style: inherit;
   margin-bottom: 70px;
+
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    flex-basis: calc((100% - 30px) / 2);
+  }
 }
 
 .address__item:not(:last-child) {
